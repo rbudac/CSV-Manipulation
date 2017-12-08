@@ -10,7 +10,8 @@ import csv
 import copy
 import sys
 
-# Parse the input files and create an associative array of frequencies for each item
+# Parse the input files and find the most concurrent hashtags with a given one
+# (Given hashtag is passed in using the "-hashtag" command line argument.)
 def parse(args):
     items = {}
     total_items = 0
