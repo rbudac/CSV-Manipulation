@@ -10,7 +10,9 @@ import csv
 #import copy
 import sys
 
-# Parse the input files and create an associative array of frequencies for each item
+# Sort a csv by the column label passed in via the "-data" command line argument.
+# Defaults to only outputting the top 1000, which can be specified via the
+# "-top" command line argument.
 def parse(args):
     items = {}
     total_items = 0
