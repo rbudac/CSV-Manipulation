@@ -7,7 +7,9 @@ import argparse
 import csv
 import sys
 
-# Parse the input files and create an associative array of frequencies for each item
+# Parse the input files and output a csv containing only rows that have
+# a userid that is passed in via the "-userids" command line.
+# Note: Multiple userids can be passed in with this argument.
 def parse(args):
     items = {}
     total_items = 0
