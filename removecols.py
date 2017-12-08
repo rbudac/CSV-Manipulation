@@ -8,7 +8,9 @@ import csv
 import sys
 
 def parse(args):
-# Parse the input files and remove rows that contain certain values.
+# Parse the input files and only keeps the column that is specified by
+# the "-row" command line argument. (Yes, it should be a "-column" command
+# line argument, but it is not.)
 
     for filename in os.listdir(args.path):
         if re.search(args.string, filename) and ".csv" in filename:
